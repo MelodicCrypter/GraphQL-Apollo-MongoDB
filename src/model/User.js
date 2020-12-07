@@ -49,7 +49,7 @@ const userSchema = new Mongoose.Schema({
 // ! BEFORE SAVING, check password if modified
 // For new and existing users, [re]-authenticate first
 // ISSUE: AS OF NOW, ONLY WORKS FOR NEWLY CREATED USERS
-userSchema.pre('save', async function(next) {
+userSchema.pre('save', async function (next) {
     const user = this;
 
     // If the password under User model has been updated or
