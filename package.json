@@ -1,40 +1,41 @@
 {
-  "name": "graphql-apollo-mongodb",
-  "version": "1.0.0",
+  "name": "graphql-apollo-mongodb-template",
+  "version": "1.1.0",
   "main": "server.js",
   "license": "MIT",
   "scripts": {
     "clean": "rm -rf build && mkdir build",
+    "clean-git": "rm -rf .git",
     "build-babel": "babel -d ./build ./src -s",
     "dev": "nodemon --exec babel-node src/server.js",
     "build": "yarn clean && yarn build-babel",
     "start": "yarn build && node ./build/server.js"
   },
   "dependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/plugin-transform-runtime": "^7.8.3",
-    "@babel/preset-env": "^7.8.7",
-    "@babel/runtime": "^7.8.7",
-    "apollo-server-express": "^2.11.0",
-    "bcrypt": "^4.0.1",
+    "@babel/cli": "^7.12.8",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/preset-env": "^7.12.7",
+    "@babel/runtime": "^7.12.5",
+    "apollo-server-express": "^2.19.0",
+    "bcrypt": "^5.0.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "graphql": "^14.6.0",
-    "lodash": "^4.17.15",
-    "mongoose": "^5.9.4",
-    "nodemon": "^2.0.2"
+    "graphql": "^15.4.0",
+    "lodash": "^4.17.20",
+    "mongoose": "^5.11.4",
+    "nodemon": "^2.0.6"
   },
   "devDependencies": {
-    "@babel/core": "^7.8.7",
-    "@babel/node": "^7.8.7",
+    "@babel/core": "^7.12.9",
+    "@babel/node": "^7.12.6",
     "babel-eslint": "^10.1.0",
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb": "^18.0.1",
-    "eslint-config-prettier": "^6.10.0",
-    "eslint-loader": "^3.0.3",
-    "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-prettier": "^3.1.2",
-    "prettier": "^1.19.1",
-    "pretty-quick": "^2.0.1"
+    "eslint": "^7.15.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^7.0.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.2.0",
+    "prettier": "^2.2.1",
+    "pretty-quick": "^3.1.0"
   }
 }
