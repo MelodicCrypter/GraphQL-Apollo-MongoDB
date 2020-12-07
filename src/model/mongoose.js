@@ -11,7 +11,7 @@ const mongoDbOptions = {
 // MongoDB Connection
 Mongoose.Promise = global.Promise;
 Mongoose.connect(process.env.MONGODB_URI, mongoDbOptions)
-    .then(() => console.log('🤩❤️ Connection: Successful!'))
-    .catch((e) => console.log('🤯 Connection: Unsuccessful!', e));
+    .then(() => console.log('🤩❤️ DBConnection: Successful!'))
+    .catch((e) => console.log('🤯 DB Connection: Unsuccessful! =>', e.message));
 
 export default Mongoose;
